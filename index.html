@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div id='header'>
+        <h1 id='title'>For how long have you been coding?</h1>
+        <p id="description">This survey wants to know, for how long the participant is coding and how much time he
+            spends
+            doing so.</p>
+    </div>
+
+    <main>
+        <form action="" id="survey-form">
+            <div class="name">
+                <label for="name" id="name-label">Name</label><br>
+                <input type="text" id="name" placeholder="Please insert your Name" required>
+            </div>
+
+            <div class="email">
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email" id="email" placeholder="Please insert your Email" required>
+            </div>
+
+            <div class="age">
+                <label for="age" id="number-label">Age</label><br>
+                <input type="number" id="number" min="1" max="120" placeholder="Please insert your Age">
+            </div>
+
+            <div class="school">
+                <label for="dropdown">What's your Graduation?</label><br>
+                <select name="school" id="dropdown">
+                    <option value="still">Still in School</option>
+                    <option value="middleschool">Middle School</option>
+                    <option value="highschool">High School</option>
+                    <option value="bachelor">Bachelor's degree</option>
+                    <option value="master">Master's degree</option>
+                    <option value="PhD">PhD</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="level">
+                <h2>What is your coding skill level?</h2>
+                <div class="new">
+                    <input type="radio" id='new' name='level' value='new'>
+                    <label for="new">New</label>
+                </div>
+                <div class="beginner">
+                    <input type="radio" id='beginner' name='level' value='beginner'>
+                    <label for="beginner">Beginner</label>
+                </div>
+                <div class="intermediate">
+                    <input type="radio" id='intermediate' name='level' value='intermediate'>
+                    <label for="intermediate">Intermediate</label>
+                </div>
+                <div class="advanced">
+                    <input type="radio" id='advanced' name='level' value='advanced'>
+                    <label for="advanced">Advanced</label>
+                </div>
+                <div class="professional">
+                    <input type="radio" id='professional' name='level' value='professional'>
+                    <label for="professional">Professional</label>
+                </div>
+            </div>
+
+            <div class="devtype">
+                <h2>What type of dev are you or want to be?</h2>
+                <div class="webdev">
+                    <input type="checkbox" name="web" id="web" value="web">
+                    <label for="web" class="web">Web Development</label>
+                </div>
+                <div class="android">
+                    <input type="checkbox" name="android" id="android" value="android">
+                    <label for="android" class="android">Android App Development</label>
+                </div>
+                <div class="ios">
+                    <input type="checkbox" name="ios" id="ios" value="ios">
+                    <label for="ios" class="ios">IOS Web Development</label>
+                </div>
+                <div class="desktop">
+                    <input type="checkbox" name="desktop" id="desktop" value="desktop">
+                    <label for="desktop" class="desktop">Desktop App Development</label>
+                </div>
+                <div class="gamedev">
+                    <input type="checkbox" name="gamedev" id="gamedev" value="gamedev">
+                    <label for="gamedev" class="gamedev">Game Developement</label>
+                </div>
+                <div class="machineLearning">
+                    <input type="checkbox" name="machineLearning" id="machineLearning" value="machineLearning">
+                    <label for="machineLearning" class="machineLearning">Machine Learning Enginner</label>
+                </div>
+            </div>
+            <div class="additional">
+                <textarea name="additional" id="additional" cols="50" rows="10"
+                    placeholder="If you want to present additional information, please do so here!"></textarea>
+            </div>
+            <button id="submit" type="submit">Sumbit</button>
+        </form>
+    </main>
+</body>
+
+</html>
